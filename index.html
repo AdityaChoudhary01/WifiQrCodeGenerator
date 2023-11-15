@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  </style>
+</head>
+<body>
+  <h1>Wifi Qr Code Generator<p>by</p>
+  <p>Aditya Choudhary</p></h1>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  <label for="password">Password:</label>
+  <input type="text" id="password" name="password"><br><br>
+  <button onclick="generateQRCode()">Generate QR Code</button><br><br>
+  <img id="qrcode" src="https://cdn.aptika.com/images/qr-code-generator-fb.jpg" alt="QR Code">
+  <script>
+    function generateQRCode() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      var data = "WIFI:T:WPA;S:MyHotspot;P:" + password + ";U:" + username + ";;";
+      var url = "https://api.qrserver.com/v1/create-qr-code/?data=" + encodeURIComponent(data) + "&size=200x200";
+      document.getElementById("qrcode").src = url;
+    }
+  </script>
+</body>
+</html>
