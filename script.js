@@ -31,19 +31,22 @@ function generateQRCode() {
     }
 }
 
+/**
+ * ## THE FIX IS HERE ##
+ * This function now creates a link that points directly to the QR code server's
+ * download endpoint. This avoids browser security issues.
+ */
 function downloadQRCode() {
     const qrcodeImg = document.getElementById("qrcode");
     const downloadLink = document.createElement("a");
 
-    fetch(qrcodeImg.src)
-        .then(response => response.blob())
-        .then(blob => {
-            const blobUrl = URL.createObjectURL(blob);
-            downloadLink.href = blobUrl;
-            downloadLink.download = "wifi-qrcode.png";
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-            document.body.removeChild(downloadLink);
-            URL.revokeObjectURL(blobUrl);
-        });
+    // Get the image source URL and add the 'download=1' parameter to it
+    // This tells the qrserver API to send the file as a download
+    const downloadUrl = `${qrcodeImg.src}&download=1`;
+
+    downloadLink.href = downloadUrl;
+    downloadLink.download = "wifi-qrcode.png"; // This sets the filename for the download
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
 }
