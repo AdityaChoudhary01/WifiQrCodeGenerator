@@ -30,13 +30,16 @@
 
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Enter your network password">
-                
+
                 <div class="hidden-checkbox">
                     <input type="checkbox" id="hidden" name="hidden">
                     <label for="hidden">Hidden Network</label>
                 </div>
 
-                <button onclick="generateQRCode()">Generate QR Code</button>
+                <div class="button-group">
+                    <button onclick="generateQRCode()"><i class="fas fa-qrcode"></i> Generate QR Code</button>
+                    <button id="download-btn" onclick="downloadQRCode()" style="display: none;"><i class="fas fa-download"></i> Download QR</button>
+                </div>
             </div>
 
             <div id="qrcode-container" class="qrcode-container">
@@ -52,4 +55,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
