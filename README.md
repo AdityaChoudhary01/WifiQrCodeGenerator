@@ -1,56 +1,54 @@
-Wi-Fi QR Code Generator
-A sleek, modern, and user-friendly web application to instantly generate QR codes for your Wi-Fi network. Share your Wi-Fi credentials easily and securely without typing complex passwords.
+# 📶 Wi-Fi QR Code Generator
 
-Live Demo at Wi-Fi QR Code Generator
+A sleek, modern, and user-friendly web application to instantly generate QR codes for your Wi-Fi network. Share your Wi-Fi credentials easily and securely—no more typing complex passwords.
 
-✨ Features
-Instant QR Code Generation: Create a QR code for your Wi-Fi network in seconds.
+🔗 **Live Demo**: [Wi-Fi QR Code Generator](https://adityachoudhary01.github.io/WifiQrCodeGenerator/)
 
-Multiple Security Types: Supports WPA/WPA2, WEP, and open (No Password) networks.
+---
 
-Hidden Network Support: Generate codes for non-broadcasted (hidden) SSIDs.
+## ✨ Features
 
-Live Preview: See the generated QR code immediately.
+- **Instant QR Code Generation**: Create a QR code for your Wi-Fi network in seconds.
+- **Multiple Security Types**: Supports WPA/WPA2, WEP, and open (No Password) networks.
+- **Hidden Network Support**: Generate codes for non-broadcasted (hidden) SSIDs.
+- **Live Preview**: See the generated QR code immediately.
+- **One-Click Download**: Save the QR code as a high-quality PNG image.
+- **Fully Responsive**: Works beautifully on desktops, tablets, and mobile devices.
+- **Eye-Catching Design**: Gradient background, smooth animations, and modern UI.
 
-One-Click Download: Download the QR code as a high-quality PNG image with a single click.
+---
 
-Fully Responsive: A beautiful and functional interface that works on desktops, tablets, and mobile devices.
+## 🚀 How to Use
 
-Eye-Catching Design: A modern UI with a colorful gradient background and smooth animations.
+1. **Open the Web Page**  
+   Navigate to the [Live Demo](https://adityachoudhary01.github.io/WifiQrCodeGenerator/).
 
-🚀 How to Use
-Open the web page: Navigate to the live demo link.
+2. **Enter Network Details**  
+   - **Network Name (SSID)**: Type your Wi-Fi name  
+   - **Security Type**: Choose WPA/WPA2, WEP, or None  
+   - **Password**: Enter your Wi-Fi password  
+   - **Hidden Network**: Check if your SSID is hidden
 
-Enter Network Details:
+3. **Generate QR Code**  
+   Click the **"Generate QR Code"** button.
 
-Network Name (SSID): Type the name of your Wi-Fi network.
+4. **Scan or Download**  
+   - Scan the QR code directly from the screen  
+   - Click **"Download QR"** to save the image
 
-Security Type: Select the appropriate security protocol (WPA/WPA2, WEP, or None).
+---
 
-Password: Enter your Wi-Fi password.
+## 🛠️ Technologies Used
 
-Hidden Network: Check the box if your network SSID is not broadcasted.
+- **HTML5** – Structure of the web page  
+- **CSS3** – Gradient backgrounds, animations, responsive design  
+- **JavaScript** – Core logic for QR generation and download  
+- **Font Awesome** – Icons  
+- **Google Fonts** – 'Poppins' typeface  
+- **goqr.me API** – QR code generation
 
-Generate: Click the "Generate QR Code" button.
+---
 
-Scan or Download:
+## 📄 License
 
-Scan the generated QR code directly from the screen with your device.
-
-Click the "Download QR" button to save the image.
-
-🛠️ Technologies Used
-HTML5: For the structure of the web page.
-
-CSS3: For styling, including the gradient background, animations, and responsive design.
-
-JavaScript: For the core logic of generating and downloading the QR code.
-
-Font Awesome: For icons.
-
-Google Fonts: For the 'Poppins' typeface.
-
-goqr.me API: For generating the QR code images.
-
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
